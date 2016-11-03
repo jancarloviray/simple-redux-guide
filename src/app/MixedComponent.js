@@ -7,7 +7,7 @@ let MixedComponent = ({ onClick }) => {
     return (
         <div>
             <input ref={c => { input = c } } type="text" />
-            <button onClick={e => onClick(input.value)}>Add Dummy Task</button>
+            <button onClick={e => onClick(input.value)}>Add Task</button>
         </div>
     );
 }
