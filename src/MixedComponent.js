@@ -16,7 +16,7 @@ MixedComponent.propTypes = {
     onClick: PropTypes.func.isRequired,
 }
 
-const mapDispatchToProps = (dispatch, ownProps) => ({
+const mapDispatchToProps = (dispatch) => ({
     onClick(text) {
         dispatch(addTodo(text))
     }

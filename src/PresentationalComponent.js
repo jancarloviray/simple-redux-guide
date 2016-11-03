@@ -1,15 +1,9 @@
 import React, { PropTypes } from 'react'
 
-const PresentationalComponent = ({ todos, onClick }) => (
-    <div>
-        <ul>
-            {
-                todos.map((todo) => {
-                    return <li key={todo.id}>{todo.text}</li>
-                })
-            }
-        </ul>
-    </div>
+const PresentationalComponent = ({ todos }) => (
+    <ul>
+        {todos.map((todo) => <li key={todo.id}>{todo.text}</li>)}
+    </ul>
 )
 
 PresentationalComponent.propTypes = {

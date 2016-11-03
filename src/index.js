@@ -13,6 +13,7 @@ import DevTools from './DevTools'
 const logger = createLogger()
 const isProduction = process.env.NODE_ENV === 'production'
 
+// bootstrapping some data.. useful for server-side rendering
 let initialState = {
   todos: [
     { id: 1, text: 'Read', completed: false },
